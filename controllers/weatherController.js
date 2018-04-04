@@ -7,7 +7,7 @@ var apiKey = process.env.wunderground_apikey;
 var methodPath = "/forecast10day/q/";
 
 exports.index = function(req, res) {
-  res.status(200).json({"color": "red"});
+  res.status(200).json({"Result": "Route destination arrived."});
 };
 
 

@@ -11,6 +11,6 @@ var weather_controller = require('../controllers/weatherController');
 router.get('/', weather_controller.index);  
 
 
-router.get('/:id', weather_controller.weather_get_data);
+router.get('/weathersuggest', weather_controller.weather_get_data);
 
 module.exports = router;
