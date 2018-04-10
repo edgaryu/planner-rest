@@ -41,9 +41,9 @@ function getWeatherData(lat, long, callback){
 				container.date = {
 					'month': dateObject.date.month,
 					'day': dateObject.date.day,
-					'year': dateObject.date.year,
-					'dayName': dateObject.date.weekday_short
+					'year': dateObject.date.year
 				};
+				container.dayName = dateObject.date.weekday_short
 				container.high = {
 					'fahrenheit': parseInt(dateObject.high.fahrenheit),
 					'celsius': parseInt(dateObject.high.celsius)
