@@ -4,8 +4,7 @@ var request = require('request');
 var domainPath = "http://api.wunderground.com/api/";
 
 // Uncomment if testing
-// var apiKey = process.env.wunderground_apikey;
-var apiKey = "c0a8c0dbcccf9934";
+var apiKey = process.env.wunderground_apikey;
 var methodPath = "/forecast10day/q/";
 
 exports.index = function(req, res) {
