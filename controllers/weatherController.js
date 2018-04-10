@@ -4,7 +4,8 @@ var request = require('request');
 var domainPath = "http://api.wunderground.com/api/";
 
 // Uncomment if testing
-var apiKey = process.env.wunderground_apikey;
+// var apiKey = process.env.wunderground_apikey;
+var apiKey = "c0a8c0dbcccf9934";
 var methodPath = "/forecast10day/q/";
 
 exports.index = function(req, res) {
@@ -41,7 +42,8 @@ function getWeatherData(lat, long, callback){
 				container.date = {
 					'month': dateObject.date.month,
 					'day': dateObject.date.day,
-					'year': dateObject.date.year
+					'year': dateObject.date.year,
+					'dayName': dateObject.date.weekday_short
 				};
 				container.high = {
 					'fahrenheit': parseInt(dateObject.high.fahrenheit),
